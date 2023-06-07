@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ShowLIst">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/setTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="-- 你的提醒清單 --"
+            android:textAlignment="center"
+            android:textSize="25dp" />
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回到上一頁"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/purple_200"/>
+        <androidx.recyclerview.widget.RecyclerView
+
+            android:id="@+id/show_lv"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:textStyle="bold" />
+
+
+<!--        <ListView-->
+<!--            android:id="@+id/show_lv"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:background="#AA38BD"/>-->
+    </LinearLayout>
+
+
+</RelativeLayout>
